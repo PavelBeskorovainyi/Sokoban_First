@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PKHUD
 
 
 
@@ -43,37 +44,38 @@ class PickerViewController: UIViewController {
     
     @IBAction func setButton(_ sender: UIButton) {
         
-        if numberFromPickerX == nil && numberFromPickerY == nil {
-            self.dismiss(animated: true)
-        }
+        switch (numberFromPickerX, numberFromPickerY){
         
-        if numberFromPickerX != nil && numberFromPickerY != nil {
+        case (nil, nil): self.dismiss(animated: true)
+        
+        case (_, nil):
             switch numberOfSelectedCell {
-            case 0:
-                game.startingPlayer.positionX = numberFromPickerX!
-                game.startingPlayer.positionY = numberFromPickerY!
-                
-            case 1:  game.startingBox.positionX = numberFromPickerX!
-                game.startingBox.positionY = numberFromPickerY!
-                
+            case 0: game.startingPlayer.positionX = numberFromPickerX!
+            case 1: game.startingBox.positionX = numberFromPickerX!
             case 2: game.endGame.positionX = numberFromPickerX!
-                game.endGame.positionY = numberFromPickerY!
-                
             default: break
             }
-            
-        } else if numberFromPickerX == nil && numberFromPickerY != nil  {
+        
+        case (nil, _):
             switch numberOfSelectedCell {
             case 0: game.startingPlayer.positionY = numberFromPickerY!
             case 1: game.startingBox.positionY = numberFromPickerY!
             case 2: game.endGame.positionY = numberFromPickerY!
             default: break
             }
-        } else if numberFromPickerY == nil &&  numberFromPickerX != nil{
+        
+        default:
             switch numberOfSelectedCell {
-            case 0: game.startingPlayer.positionX = numberFromPickerX!
-            case 1: game.startingBox.positionX = numberFromPickerX!
-            case 2: game.endGame.positionX = numberFromPickerX!
+            case 0:
+                game.startingPlayer.positionX = numberFromPickerX!
+                game.startingPlayer.positionY = numberFromPickerY!
+            case 1:
+                game.startingBox.positionX = numberFromPickerX!
+                game.startingBox.positionY = numberFromPickerY!
+            case 2:
+                game.endGame.positionX = numberFromPickerX!
+                game.endGame.positionY = numberFromPickerY!
+                
             default: break
             }
         }
@@ -81,8 +83,7 @@ class PickerViewController: UIViewController {
         
         if game.startingPlayer.positionX == game.startingBox.positionX &&  game.startingPlayer.positionY == game.startingBox.positionY || game.startingBox.positionX == game.endGame.positionX && game.startingBox.positionY == game.endGame.positionY || game.startingPlayer.positionX == game.endGame.positionX &&  game.startingPlayer.positionY == game.endGame.positionY {
             
-            let alertController = UIAlertController(title: "Positions of objects are the same", message: "Choose new correct positions for all objects ", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Reinstall", style: .destructive) { (action) in
+            HUD.flash(.labeledError(title: "SAME POSITIONS", subtitle: "Choose new correct positions for all objects "), onView: self.view, delay: 2.3) { (_) in
                 game.startingBox.positionX = 2
                 game.startingBox.positionY = 2
                 game.startingPlayer.positionY = 1
@@ -90,21 +91,17 @@ class PickerViewController: UIViewController {
                 game.endGame.positionX = room.width - 2
                 game.endGame.positionY = room.height - 2
             }
-            alertController.addAction(action)
-            self.present(alertController, animated: true)
-            
+                            
         } else if game.startingBox.positionX == 1 ||
                     game.startingBox.positionX == room.width ||
                     game.startingBox.positionY == room.height ||
                     game.startingBox.positionY == 1 {
-            let boxAlertController = UIAlertController(title: "You never win", message: "replace the box out of corners ", preferredStyle: .alert)
-            let actionForBox = UIAlertAction(title: "Replace", style: .destructive) { (action) in
+            
+            HUD.flash(.labeledError(title: "You never win", subtitle: "replace the box out of corners "), onView: self.view, delay: 2.3) { (_) in
                 game.startingBox.positionX = 2
                 game.startingBox.positionY = 2
             }
-            boxAlertController.addAction(actionForBox)
-            self.present(boxAlertController, animated: true)
-            
+           
         } else { self.dismiss(animated: true) }
         
         game.player.positionX = game.startingPlayer.positionX
@@ -130,11 +127,7 @@ extension PickerViewController: UIPickerViewDataSource {
         case 1: return room.height
         default: return 0
         }
-        
     }
-    
-    
-    
 }
 
 extension PickerViewController: UIPickerViewDelegate {
@@ -142,6 +135,7 @@ extension PickerViewController: UIPickerViewDelegate {
         var array = [String]()
         
         switch component {
+        
         case 0:
             for num in 1...room.width {
                 array.append(String(num))

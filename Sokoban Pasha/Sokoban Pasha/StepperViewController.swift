@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PKHUD
 
 class StepperViewController: UIViewController {
     
@@ -39,11 +40,9 @@ class StepperViewController: UIViewController {
     
     @IBAction func setButton(_ sender: Any) {
         
-        let alert = UIAlertController(title: "Size have changed", message: "Positions of all objects become default", preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "Ok", style: .default) {  (action) in
+        HUD.flash(.labeledProgress(title: "Size have changed", subtitle: "Positions of all objects become default"), onView: self.view, delay: 1.5) { (_) in
             self.view.removeFromSuperview()
         }
-        alert.addAction(alertAction)
         
         room.width = Int(steppers[0].value)
         room.height = Int(steppers[1].value)
@@ -59,9 +58,8 @@ class StepperViewController: UIViewController {
         game.box.positionX = game.startingBox.positionX
         game.box.positionY = game.startingBox.positionY
         
-        delegate?.settingsChanged(gameField: field, moves: 0, counter: "Size have changed", description: "Positions become default")
+        delegate?.settingsChanged(gameField: field, moves: 0, counter: "New Game", description: "Width: \(room.width) Height: \(room.height)")
         
-        self.present(alert, animated: true, completion: nil)
     }
     
     func addTapGestureToHideWindow () {
