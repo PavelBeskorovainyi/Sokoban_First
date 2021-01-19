@@ -40,7 +40,10 @@ class StepperViewController: UIViewController {
     
     @IBAction func setButton(_ sender: Any) {
         
-        HUD.flash(.labeledProgress(title: "Size have changed", subtitle: "Positions of all objects become default"), onView: self.view, delay: 1.5) { (_) in
+        HUD.flash(.labeledProgress(title: "Size have changed", subtitle: "Positions of all objects become default"), onView: self.view, delay: 1.5)
+        {
+            [weak self] (_) in
+            guard let self = self else {return}
             self.view.removeFromSuperview()
         }
         
@@ -62,7 +65,7 @@ class StepperViewController: UIViewController {
         
     }
     
-    func addTapGestureToHideWindow () {
+   private func addTapGestureToHideWindow () {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(closeWindow))
         self.view.addGestureRecognizer(tapGesture)
     }

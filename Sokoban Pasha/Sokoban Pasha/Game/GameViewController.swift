@@ -29,6 +29,7 @@ class GameViewController: UIViewController, SettingsDelegate {
         super.viewDidLoad()
         self.gameLabel.text = field
         
+        
     }
  
     
@@ -81,7 +82,9 @@ class GameViewController: UIViewController, SettingsDelegate {
         
         if game.box.positionX == game.endGame.positionX && game.box.positionY == game.endGame.positionY {
         
-            HUD.flash(.labeledSuccess(title: "YOU WIN", subtitle: "new game started"), onView: self.view, delay: 1.4) { (_) in
+            HUD.flash(.labeledSuccess(title: "YOU WIN", subtitle: "new game started"), onView: self.view, delay: 1.4)
+            {
+                [unowned self, unowned game] (_) in
                      game.box.positionX = game.startingBox.positionX
                      game.box.positionY = game.startingBox.positionY
                      game.player.positionY = game.startingPlayer.positionY
@@ -90,7 +93,9 @@ class GameViewController: UIViewController, SettingsDelegate {
                      self.countOfMoves = 0
                      self.movesLabel.text = "You win"
                      self.gameText.text = "Congratulations"
+                
             }
+            
         }
     }
     

@@ -83,7 +83,11 @@ class PickerViewController: UIViewController {
         
         if game.startingPlayer.positionX == game.startingBox.positionX &&  game.startingPlayer.positionY == game.startingBox.positionY || game.startingBox.positionX == game.endGame.positionX && game.startingBox.positionY == game.endGame.positionY || game.startingPlayer.positionX == game.endGame.positionX &&  game.startingPlayer.positionY == game.endGame.positionY {
             
-            HUD.flash(.labeledError(title: "SAME POSITIONS", subtitle: "Choose new correct positions for all objects "), onView: self.view, delay: 2.3) { (_) in
+            HUD.flash(.labeledError(title: "SAME POSITIONS", subtitle: "Choose new correct positions for all objects "), onView: self.view, delay: 2.3)
+            {
+                [weak game] (_) in
+                guard let game = game else {return}
+                
                 game.startingBox.positionX = 2
                 game.startingBox.positionY = 2
                 game.startingPlayer.positionY = 1
@@ -97,7 +101,10 @@ class PickerViewController: UIViewController {
                     game.startingBox.positionY == room.height ||
                     game.startingBox.positionY == 1 {
             
-            HUD.flash(.labeledError(title: "You never win", subtitle: "replace the box out of corners "), onView: self.view, delay: 2.3) { (_) in
+            HUD.flash(.labeledError(title: "You never win", subtitle: "replace the box out of corners "), onView: self.view, delay: 2.3)
+            {
+                [weak game] (_) in
+                guard let game = game else {return}
                 game.startingBox.positionX = 2
                 game.startingBox.positionY = 2
             }
