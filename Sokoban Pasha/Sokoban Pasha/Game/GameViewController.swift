@@ -80,22 +80,18 @@ class GameViewController: UIViewController, SettingsDelegate {
        
         
         if game.box.positionX == game.endGame.positionX && game.box.positionY == game.endGame.positionY {
-           
-            let alertController = UIAlertController(title: "Congratulations", message: "You win", preferredStyle: .alert)
-            let action = UIAlertAction(title: "New Game", style: .default) { (action) in
-                game.box.positionX = game.startingBox.positionX
-                game.box.positionY = game.startingBox.positionY
-                game.player.positionY = game.startingPlayer.positionY
-                game.player.positionX = game.startingPlayer.positionX
-                self.gameLabel.text = field
-                self.countOfMoves = 0
-                self.movesLabel.text = "You win"
-                self.gameText.text = "Congratulations"
-            }
-            alertController.addAction(action)
-            self.present(alertController, animated: true, completion: nil)
-        }
         
+            HUD.flash(.labeledSuccess(title: "YOU WIN", subtitle: "new game started"), onView: self.view, delay: 1.4) { (_) in
+                     game.box.positionX = game.startingBox.positionX
+                     game.box.positionY = game.startingBox.positionY
+                     game.player.positionY = game.startingPlayer.positionY
+                     game.player.positionX = game.startingPlayer.positionX
+                     self.gameLabel.text = field
+                     self.countOfMoves = 0
+                     self.movesLabel.text = "You win"
+                     self.gameText.text = "Congratulations"
+            }
+        }
     }
     
     

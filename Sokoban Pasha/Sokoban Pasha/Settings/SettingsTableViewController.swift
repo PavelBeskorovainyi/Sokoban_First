@@ -23,8 +23,7 @@ class SettingsTableViewController: UITableViewController {
         cellNames.append(contentsOf: [
             Cells(cellName: "Player"),
             Cells(cellName: "Box"),
-            Cells(cellName: "Hole"),
-            //            Cells(cellName: "Size")
+            Cells(cellName: "Drop"),
         ])
     }
     
