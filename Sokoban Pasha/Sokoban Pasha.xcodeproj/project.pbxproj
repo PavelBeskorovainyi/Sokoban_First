@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B72E78E348A72CCD6139338 /* Pods_Sokoban_Pasha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EFC96186988124E84F90D0 /* Pods_Sokoban_Pasha.framework */; };
 		6D2E9B6F25AA0C97007B8FF5 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E9B6E25AA0C97007B8FF5 /* PickerViewController.swift */; };
 		6D783FFC25B0CBE900A3D220 /* Room & Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D783FFB25B0CBE900A3D220 /* Room & Field.swift */; };
 		6D78400425B0CC6300A3D220 /* PositionInRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D78400325B0CC6300A3D220 /* PositionInRoom.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C820FB84BD015F4B5FC74F5 /* Pods-Sokoban Pasha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sokoban Pasha.release.xcconfig"; path = "Target Support Files/Pods-Sokoban Pasha/Pods-Sokoban Pasha.release.xcconfig"; sourceTree = "<group>"; };
 		6D2E9B6E25AA0C97007B8FF5 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		6D783FFB25B0CBE900A3D220 /* Room & Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room & Field.swift"; sourceTree = "<group>"; };
 		6D78400325B0CC6300A3D220 /* PositionInRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionInRoom.swift; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		6DCCA3D125A9B30E00CC79F5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		6DCCA3D425A9F27100CC79F5 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		6DCDFCF925AA033600291B6B /* SetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewCell.swift; sourceTree = "<group>"; };
+		81EFC96186988124E84F90D0 /* Pods_Sokoban_Pasha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sokoban_Pasha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD2A02D029B415E716E1B31 /* Pods-Sokoban Pasha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sokoban Pasha.debug.xcconfig"; path = "Target Support Files/Pods-Sokoban Pasha/Pods-Sokoban Pasha.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B72E78E348A72CCD6139338 /* Pods_Sokoban_Pasha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,8 @@
 			children = (
 				6DCCA3B725A8FDB600CC79F5 /* Sokoban Pasha */,
 				6DCCA3B625A8FDB600CC79F5 /* Products */,
+				CF90F539E48F9394A7AD86E7 /* Pods */,
+				A43418D6666FEAEFEB3469C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +117,24 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		A43418D6666FEAEFEB3469C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81EFC96186988124E84F90D0 /* Pods_Sokoban_Pasha.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF90F539E48F9394A7AD86E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABD2A02D029B415E716E1B31 /* Pods-Sokoban Pasha.debug.xcconfig */,
+				2C820FB84BD015F4B5FC74F5 /* Pods-Sokoban Pasha.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DCCA3C925A8FDB800CC79F5 /* Build configuration list for PBXNativeTarget "Sokoban Pasha" */;
 			buildPhases = (
+				6B621ED6BAB19BEB52E4FFEC /* [CP] Check Pods Manifest.lock */,
 				6DCCA3B125A8FDB600CC79F5 /* Sources */,
 				6DCCA3B225A8FDB600CC79F5 /* Frameworks */,
 				6DCCA3B325A8FDB600CC79F5 /* Resources */,
+				A35E4A13D4FD09585B8286A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +201,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B621ED6BAB19BEB52E4FFEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sokoban Pasha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A35E4A13D4FD09585B8286A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sokoban Pasha/Pods-Sokoban Pasha-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sokoban Pasha/Pods-Sokoban Pasha-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sokoban Pasha/Pods-Sokoban Pasha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DCCA3B125A8FDB600CC79F5 /* Sources */ = {
@@ -335,6 +404,7 @@
 		};
 		6DCCA3CA25A8FDB800CC79F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABD2A02D029B415E716E1B31 /* Pods-Sokoban Pasha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -357,6 +427,7 @@
 		};
 		6DCCA3CB25A8FDB800CC79F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C820FB84BD015F4B5FC74F5 /* Pods-Sokoban Pasha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

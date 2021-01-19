@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PKHUD
 
 protocol SettingsDelegate {
     func settingsChanged (gameField: String, moves: Int, counter: String, description: String)
