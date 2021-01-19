@@ -84,7 +84,8 @@ class GameViewController: UIViewController, SettingsDelegate {
         
             HUD.flash(.labeledSuccess(title: "YOU WIN", subtitle: "new game started"), onView: self.view, delay: 1.4)
             {
-                [unowned self, unowned game] (_) in
+                [weak self, weak game] (_) in
+                guard let self = self, let game = game else {return}
                      game.box.positionX = game.startingBox.positionX
                      game.box.positionY = game.startingBox.positionY
                      game.player.positionY = game.startingPlayer.positionY
