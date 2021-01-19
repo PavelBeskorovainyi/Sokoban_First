@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "depositphotos_75194639-stock-photo-close-up-of-wooden-box.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

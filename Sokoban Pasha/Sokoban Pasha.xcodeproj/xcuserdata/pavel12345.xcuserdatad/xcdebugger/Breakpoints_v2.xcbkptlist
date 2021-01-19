@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "11532743-0273-4970-B761-1E6B4D32BDAB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A1A6A99-0897-4689-89E6-3D7E295FD274"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sokoban Pasha/Settings/PickerViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "PickerViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "0A1A6A99-0897-4689-89E6-3D7E295FD274 - 956ebe3b865d3d71"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.numberOfIndexPath.getter : Swift.Int"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "110">
+               </Location>
+               <Location
+                  uuid = "0A1A6A99-0897-4689-89E6-3D7E295FD274 - dc882cb8911bcf05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.numberOfIndexPath.setter : Swift.Int"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  uuid = "0A1A6A99-0897-4689-89E6-3D7E295FD274 - 8a3b7260196e42bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.numberOfIndexPath.modify : Swift.Int"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "0A1A6A99-0897-4689-89E6-3D7E295FD274 - 97066145e1081fc8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.numberOfIndexPath.modify : Swift.Int with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "0A1A6A99-0897-4689-89E6-3D7E295FD274 - b23b1024a4242fd9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Sokoban_Pasha.PickerViewController"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "435">
+               </Location>
+               <Location
+                  uuid = "0A1A6A99-0897-4689-89E6-3D7E295FD274 - c933b471c76b351d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Sokoban_Pasha.PickerViewController&gt;"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "343">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "232E8C9C-CBA1-46B5-8A59-7C8EA079C06D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sokoban Pasha/Settings/PickerViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "PickerViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "232E8C9C-CBA1-46B5-8A59-7C8EA079C06D - 3c263dd9ba941689"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.(numbersFromPickerX in _5CB185F12130AE3EC3622F1975E98AFE).getter : Swift.Int"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "110">
+               </Location>
+               <Location
+                  uuid = "232E8C9C-CBA1-46B5-8A59-7C8EA079C06D - f3863b280f332a9d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.(numbersFromPickerX in _5CB185F12130AE3EC3622F1975E98AFE).setter : Swift.Int"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  uuid = "232E8C9C-CBA1-46B5-8A59-7C8EA079C06D - 51a890440e95b705"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.(numbersFromPickerX in _5CB185F12130AE3EC3622F1975E98AFE).modify : Swift.Int"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "232E8C9C-CBA1-46B5-8A59-7C8EA079C06D - c9f5f5e1b01848d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.(numbersFromPickerX in _5CB185F12130AE3EC3622F1975E98AFE).modify : Swift.Int with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "232E8C9C-CBA1-46B5-8A59-7C8EA079C06D - b23b1024a4242e1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Sokoban_Pasha.PickerViewController"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "370">
+               </Location>
+               <Location
+                  uuid = "232E8C9C-CBA1-46B5-8A59-7C8EA079C06D - c933b471c76b34df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Sokoban_Pasha.PickerViewController&gt;"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "311">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A46F99FE-6C1D-499E-BC63-BD1E4B60975C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sokoban Pasha/Settings/PickerViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "PickerViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "A46F99FE-6C1D-499E-BC63-BD1E4B60975C - 7f6bd77220c662b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.(numberFromPickerY in _5CB185F12130AE3EC3622F1975E98AFE).getter : Swift.Int"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "110">
+               </Location>
+               <Location
+                  uuid = "A46F99FE-6C1D-499E-BC63-BD1E4B60975C - 32ebde5a4662368c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.(numberFromPickerY in _5CB185F12130AE3EC3622F1975E98AFE).setter : Swift.Int"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  uuid = "A46F99FE-6C1D-499E-BC63-BD1E4B60975C - 88aaf13fbd8044d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.(numberFromPickerY in _5CB185F12130AE3EC3622F1975E98AFE).modify : Swift.Int"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "A46F99FE-6C1D-499E-BC63-BD1E4B60975C - 30f4a78342682b4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.(numberFromPickerY in _5CB185F12130AE3EC3622F1975E98AFE).modify : Swift.Int with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "A46F99FE-6C1D-499E-BC63-BD1E4B60975C - b23b1024a4242ff8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Sokoban_Pasha.PickerViewController"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "464">
+               </Location>
+               <Location
+                  uuid = "A46F99FE-6C1D-499E-BC63-BD1E4B60975C - c933b471c76b353c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sokoban_Pasha.PickerViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Sokoban_Pasha.PickerViewController&gt;"
+                  moduleName = "Sokoban Pasha"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavel12345/Documents/Developer/Sokoban%20Pasha/Sokoban%20Pasha/Settings/PickerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "405">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
