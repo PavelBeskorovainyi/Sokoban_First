@@ -45,3 +45,21 @@ public var field: String {
     }
     return text
 }
+
+public var fieldWithoutWalls: String {
+    var text = ""
+        for h in 1...room.height {
+            var str = ""
+            for w in 1...room.width {
+                switch(w, h) {
+                case (game.player.positionX, game.player.positionY): str.append(showHero)
+                case(game.box.positionX, game.box.positionY): str.append(showBox)
+                case (game.endGame.positionX, game.endGame.positionY): str.append(endGameSymb)
+                default: str.append(showEmpty)
+                }
+            }
+            text.append(str)
+        }
+        return text
+    }
+

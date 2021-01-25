@@ -29,7 +29,6 @@ class GameViewController: UIViewController, SettingsDelegate {
         super.viewDidLoad()
         self.gameLabel.text = field
         
-        
     }
  
     

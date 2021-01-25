@@ -70,6 +70,44 @@ class Game {
         return field
     }
     
+    func moveOnCollection(go: Steps) {
+        
+        switch (player.positionX, player.positionY, go) {
+        
+        case(1, _, .left): break
+        case(_, 1, .up): break
+        case(room.width, _, .right): break
+        case(_, room.height, .down): break
+            
+        case (box.positionX, (box.positionY + 1), .up), ((box.positionX - 1), box.positionY, .right), ((box.positionX + 1), box.positionY, .left), (box.positionX, (box.positionY - 1), .down):
+            
+            switch go {
+            
+            case .up : if box.positionY == 1 {  break }
+            else { fallthrough }
+            case .right: if box.positionX == room.width && box.positionY == player.positionY { break } else { fallthrough }
+            case .left: if box.positionX == 1 && box.positionY == player.positionY { break }
+            else { fallthrough }
+            case .down: if box.positionY == room.height && box.positionX == player.positionX{ break } else { fallthrough }
+                
+            default :
+                box.positionX += go.stepPosition.x
+                box.positionY += go.stepPosition.y
+                player.positionX += go.stepPosition.x
+                player.positionY += go.stepPosition.y
+            }
+            
+            
+        default : player.positionX += go.stepPosition.x
+            player.positionY += go.stepPosition.y
+        }
+        
+        if player.positionX == endGame.positionX && player.positionY == endGame.positionY {
+            player.positionX = startingPlayer.positionX
+            player.positionY = startingPlayer.positionY
+        }
+    }
+    
 }
 
 var game = Game()
