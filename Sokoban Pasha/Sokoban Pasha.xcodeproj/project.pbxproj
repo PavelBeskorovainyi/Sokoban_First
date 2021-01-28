@@ -23,6 +23,7 @@
 		6DCCA3D225A9B30E00CC79F5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCCA3D125A9B30E00CC79F5 /* GameViewController.swift */; };
 		6DCCA3D525A9F27100CC79F5 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCCA3D425A9F27100CC79F5 /* SettingsTableViewController.swift */; };
 		6DCDFCFA25AA033600291B6B /* SetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCDFCF925AA033600291B6B /* SetTableViewCell.swift */; };
+		D05AB6A025C367CC00386C9C /* RandomPositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AB69F25C367CC00386C9C /* RandomPositions.swift */; };
 		D0608C2025BB79E700D33A8A /* GameCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0608C1F25BB79E700D33A8A /* GameCollectionViewController.swift */; };
 		D07866C825BDE7A2001AD50B /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07866C725BDE7A2001AD50B /* Collection.storyboard */; };
 		D07866CB25BDE8A8001AD50B /* CollectionTextFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07866CA25BDE8A8001AD50B /* CollectionTextFieldsViewController.swift */; };
@@ -55,6 +56,7 @@
 		6DCDFCF925AA033600291B6B /* SetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewCell.swift; sourceTree = "<group>"; };
 		81EFC96186988124E84F90D0 /* Pods_Sokoban_Pasha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sokoban_Pasha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD2A02D029B415E716E1B31 /* Pods-Sokoban Pasha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sokoban Pasha.debug.xcconfig"; path = "Target Support Files/Pods-Sokoban Pasha/Pods-Sokoban Pasha.debug.xcconfig"; sourceTree = "<group>"; };
+		D05AB69F25C367CC00386C9C /* RandomPositions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPositions.swift; sourceTree = "<group>"; };
 		D0608C1F25BB79E700D33A8A /* GameCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionViewController.swift; sourceTree = "<group>"; };
 		D07866C725BDE7A2001AD50B /* Collection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
 		D07866CA25BDE8A8001AD50B /* CollectionTextFieldsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTextFieldsViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				6DCCA3D425A9F27100CC79F5 /* SettingsTableViewController.swift */,
 				6D2E9B6E25AA0C97007B8FF5 /* PickerViewController.swift */,
 				6D8CCA0225AF92C900E3EC42 /* StepperViewController.swift */,
+				D05AB69F25C367CC00386C9C /* RandomPositions.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				D07FA34425BC5A69002D74DC /* GetIndexOfPositionForCollectionView.swift in Sources */,
 				6DCDFCFA25AA033600291B6B /* SetTableViewCell.swift in Sources */,
 				6DCCA3D225A9B30E00CC79F5 /* GameViewController.swift in Sources */,
+				D05AB6A025C367CC00386C9C /* RandomPositions.swift in Sources */,
 				6D783FFC25B0CBE900A3D220 /* Room & Field.swift in Sources */,
 				6DCCA3BD25A8FDB600CC79F5 /* ViewController.swift in Sources */,
 				6DCCA3D525A9F27100CC79F5 /* SettingsTableViewController.swift in Sources */,

@@ -11,7 +11,6 @@ class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var textView: UITextView!
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
         self.textView.font = UIFont.preferredFont(forTextStyle: .body)
@@ -21,5 +20,5 @@ class CollectionViewCell: UICollectionViewCell {
     func setTextToUI (_ text: String) {
         textView.text = text
     }
-
+    
 }
