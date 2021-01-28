@@ -23,7 +23,7 @@ class SettingsTableViewController: UITableViewController {
         cellNames.append(contentsOf: [
             Cells(cellName: "Player"),
             Cells(cellName: "Box"),
-            Cells(cellName: "Drop"),
+            Cells(cellName: "Drop")
         ])
     }
     
@@ -39,14 +39,13 @@ class SettingsTableViewController: UITableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return 3
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section{
         case 0: return self.cellNames.count
-        case 1: return 1
-        default: return 0
+        default: return 1
         }
         //        return self.cellNames.count
     }
@@ -61,6 +60,9 @@ class SettingsTableViewController: UITableViewController {
         case 1: let sizeObject = Cells(cellName: "Size")
             cell?.setModelToUI(sizeObject)
             cell?.accessoryType = .detailButton
+        case 2: let random = Cells(cellName: "SET RANDOM POSITIONS")
+            cell?.setModelToUI(random)
+            cell?.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
         default: break
         }
         
@@ -71,7 +73,9 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0: return "Positions of objects"
-        default: return "Game Field"
+        case 1: return "Game Field"
+        case 2: return "Test"
+        default: return ""
         }
     }
     
@@ -88,17 +92,32 @@ class SettingsTableViewController: UITableViewController {
         
         changedIndexPath = indexPath.row
         
-        
-        if indexPath.section == 1 {
+        switch indexPath.section {
+        case 1:
             let showUpWindow = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "stepperID") as! StepperViewController
             self.addChild(showUpWindow)
             showUpWindow.view.frame = self.view.frame
             self.view.addSubview(showUpWindow.view)
             showUpWindow.didMove(toParent: self)
             showUpWindow.delegate = self.delegate
+        case 2:
+            let alertController = UIAlertController(title: "Set random positions?", message: "", preferredStyle: .alert)
+            let action1 = UIAlertAction(title: "Ok", style: .default) { [weak alertController] _ in
+                guard let alertController = alertController else {return }
+                setRandomPositions()
+                alertController.dismiss(animated: true)
+            }
+            let action2 = UIAlertAction(title: "Cancel", style: .destructive) { [weak alertController] _ in
+                guard let alertController = alertController else {return }
+                alertController.dismiss(animated: true)
+            }
+            alertController.addAction(action1)
+            alertController.addAction(action2)
             
-        } else {
-            self.performSegue(withIdentifier: "pickerID", sender: self) }
+            self.present(alertController, animated: true)
+        
+        default: self.performSegue(withIdentifier: "pickerID", sender: self)
+        }
     }
 }
 

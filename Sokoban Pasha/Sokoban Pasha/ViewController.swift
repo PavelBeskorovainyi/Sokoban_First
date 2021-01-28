@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func newGameCollection(_ sender: Any) {
+        let vc = CollectionTextFieldsViewController.createFromStoryboard()
+        self.navigationController?.present(vc, animated: true)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -14,24 +14,18 @@ protocol SettingsDelegate {
 
 
 class GameViewController: UIViewController, SettingsDelegate {
- 
+    
     @IBOutlet weak var gameLabel: UITextView!
-    
     @IBOutlet weak var gameText: UILabel!
-    
     @IBOutlet weak var movesLabel: UILabel!
     
-    
     private var countOfMoves = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.gameLabel.text = field
         
-        
     }
- 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "fromGameToSettings",
@@ -43,15 +37,15 @@ class GameViewController: UIViewController, SettingsDelegate {
     
     
     @IBAction func gameSteps(_ sender: UIButton) {
-       
-
+        
+        
         self.gameText.text = "Good luck"
         self.movesLabel.text = "Moves: \(countOfMoves + 1)"
         
         countOfMoves += 1
-    
+        
         switch sender.tag {
-       
+        
         case 1: self.gameLabel.text = game.moveOn(go: .down)
             
             if game.player.positionY == room.height || game.player.positionX == game.box.positionX && game.box.positionY == room.height && game.player.positionY == game.box.positionY - 1{
@@ -61,39 +55,39 @@ class GameViewController: UIViewController, SettingsDelegate {
             if game.player.positionY == 1 || game.box.positionY == 1 && game.player.positionY == game.box.positionY + 1 && game.box.positionX == game.player.positionX {
                 countOfMoves -= 1
                 gameText.text = "You cant move up" }
-
-        
+            
+            
         case 3: self.gameLabel.text = game.moveOn(go: .left)
             if game.player.positionX == 1 || game.box.positionX == 1 && game.player.positionX == game.box.positionX + 1 && game.player.positionY == game.box.positionY {
                 countOfMoves -= 1
                 gameText.text = "You cant move left" }
             
-
+            
         case 4:
             self.gameLabel.text = game.moveOn(go: .right)
             if game.player.positionX == room.width || game.box.positionX == room.width &&
                 game.player.positionX == game.box.positionX - 1 && game.player.positionY == game.box.positionY {
                 countOfMoves -= 1
                 gameText.text = "You cant move right" }
-
+            
         default: break
         }
-       
+        
         
         if game.box.positionX == game.endGame.positionX && game.box.positionY == game.endGame.positionY {
-        
+            
             HUD.flash(.labeledSuccess(title: "YOU WIN", subtitle: "new game started"), onView: self.view, delay: 1.4)
             {
                 [weak self, weak game] (_) in
                 guard let self = self, let game = game else {return}
-                     game.box.positionX = game.startingBox.positionX
-                     game.box.positionY = game.startingBox.positionY
-                     game.player.positionY = game.startingPlayer.positionY
-                     game.player.positionX = game.startingPlayer.positionX
-                     self.gameLabel.text = field
-                     self.countOfMoves = 0
-                     self.movesLabel.text = "You win"
-                     self.gameText.text = "Congratulations"
+                game.box.positionX = game.startingBox.positionX
+                game.box.positionY = game.startingBox.positionY
+                game.player.positionY = game.startingPlayer.positionY
+                game.player.positionX = game.startingPlayer.positionX
+                self.gameLabel.text = field
+                self.countOfMoves = 0
+                self.movesLabel.text = "You win"
+                self.gameText.text = "Congratulations"
                 
             }
             
